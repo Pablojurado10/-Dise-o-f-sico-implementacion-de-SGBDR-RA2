@@ -1,9 +1,5 @@
 # Diseño Físico e Implementación de SGBDR
-
-**RA2:** Crea bases de datos definiendo su estructura y las características de sus elementos según el modelo relacional.
-
 **Nombre:** Pablo Jurado Bioque  
-**Fecha:** ___________
 
 ---
 
@@ -18,9 +14,9 @@ El sistema debe gestionar el inventario físico de una biblioteca. El modelo con
 
 ---
 
-## TAREA 1: Definición de Estructura y Tipos de Datos *(40% de la nota)*
+## TAREA 1: Definición de Estructura y Tipos de Datos 
 
-### 1.1 (CE b, d — 15%) Creación del esquema relacional
+### 1.1 Creación del esquema relacional
 
 Código SQL para crear el esquema con Claves Primarias, Foráneas y opciones de borrado:
 
@@ -66,7 +62,7 @@ CREATE TABLE PRESTAMOS (
 
 ---
 
-### 1.2 (CE c — 15%) Comparativa de tipos de datos
+### 1.2 Comparativa de tipos de datos
 
 #### Modificación de la tabla SOCIOS para añadir fechas
 
@@ -98,7 +94,7 @@ ALTER TABLE SOCIOS
 
 ---
 
-### 1.3 (CE e — 10%) Restricciones de integridad
+### 1.3 Restricciones de integridad
 
 Añadir restricción CHECK sobre Estado y clave candidata en Email:
 
@@ -115,7 +111,7 @@ ALTER TABLE SOCIOS
 
 ## TAREA 2: Objetos de la Base de Datos y Optimización *(30% de la nota)*
 
-### 2.1 (CE f — 10%) Vista de préstamos activos
+### 2.1 Vista de préstamos activos
 
 ```sql
 CREATE OR REPLACE VIEW VISTA_PRESTAMOS_ACTIVOS AS
@@ -134,7 +130,7 @@ CREATE OR REPLACE VIEW VISTA_PRESTAMOS_ACTIVOS AS
 
 ---
 
-### 2.2 (CE h — 10%) Índice sobre la tabla LIBROS
+### 2.2 Índice sobre la tabla LIBROS
 
 ```sql
 CREATE INDEX idx_libros_titulo ON LIBROS (Titulo);
@@ -144,7 +140,7 @@ CREATE INDEX idx_libros_titulo ON LIBROS (Titulo);
 
 ---
 
-### 2.3 (CE a — 10%) Definición de TABLESPACE en Oracle
+### 2.3 Definición de TABLESPACE en Oracle
 
 Un **TABLESPACE** es la unidad lógica de almacenamiento en Oracle que agrupa uno o varios ficheros físicos del sistema operativo (datafiles).
 
@@ -156,9 +152,9 @@ Un **TABLESPACE** es la unidad lógica de almacenamiento en Oracle que agrupa un
 
 ---
 
-## TAREA 3: Administración y Herramientas *(30% de la nota)*
+## TAREA 3: Administración y Herramientas 
 
-### 3.1 (CE g — 20%) Gestión de seguridad y privilegios
+### 3.1 Gestión de seguridad y privilegios
 
 #### Crear usuario `super_admin` con todos los privilegios
 
@@ -194,7 +190,7 @@ DROP USER tecnico_inventario CASCADE;
 
 ---
 
-### 3.2 (CE b — 5%) Conexión a consola
+### 3.2 Conexión a consola
 
 | SGBD   | Comando                  |
 |--------|--------------------------|
@@ -203,7 +199,7 @@ DROP USER tecnico_inventario CASCADE;
 
 ---
 
-### 3.3 (CE h — 5%) Identificación de herramientas gráficas
+### 3.3 Identificación de herramientas gráficas
 
 | Herramienta       | CLI (Consola) | Web | Escritorio (GUI) | Multi-extensión | Nativo MySQL | Nativo Oracle |
 |-------------------|:---:|:---:|:---:|:---:|:---:|:---:|
